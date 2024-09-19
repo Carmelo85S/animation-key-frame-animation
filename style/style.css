@@ -44,8 +44,7 @@ span{
 }
 
 h2{
-    font-size: 60px;
-    color:black;
+    font-size: 30px;
 }
 
 h3{
@@ -104,6 +103,10 @@ a:hover{
     color:#FFD700;
 }
 
+p{
+    font-size: 16px;
+}
+
 span{
     color:#FFD700;
     font-style: italic;
@@ -113,7 +116,7 @@ span{
 /* HERO SECTION */
 .hero {
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     background: url(../image/alfa-romeo.jpg) no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -164,6 +167,7 @@ span{
     width: 250px;
     border-radius: 10px;
     padding-bottom: 0;
+    box-shadow: 1px 1px 20px rgb(67, 66, 66);
     transition: 0.3s ease-in-out;
 }
 
@@ -171,3 +175,28 @@ span{
     transform: scale(1.05);
 }
 
+.ferrari-animation{
+    animation: fadeIn 0.5s ease-in;
+}
+
+.suv-animation{
+    animation: fadeIn 1s ease-in;
+}
+
+.tesla-animation{
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/*footer*/
+
+.steps__container{
+    width: 100%;
+    min-height: auto;
+    border-top: 1px solid rgba(196, 192, 192, 0.3);
+    text-align: center;
+}
