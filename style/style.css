@@ -145,6 +145,11 @@ span{
     font-size: 16px;
 }
 
+.animate__animated,
+.animate__fadeInLeft{
+    animation-duration: 2s;
+}
+
 /*Choose Vehicle*/
 .vehicle{
     width: 100%;
@@ -196,7 +201,20 @@ span{
 
 .steps__container{
     width: 100%;
-    min-height: auto;
+    min-height: 400px;
     border-top: 1px solid rgba(196, 192, 192, 0.3);
-    text-align: center;
+}
+
+.steps__container-content{
+    max-width: 300px;
+    width: 100%;
+    min-height: 200px;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.steps__num{
+    font-size: 10px;
+    color: rgb(138, 106, 65);
 }
